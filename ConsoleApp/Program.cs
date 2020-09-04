@@ -10,16 +10,33 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-04
-            string charName = "John";
-            int charAge;
-            charAge = 56;
+            // tutorial-05
+            string phrase = "Shivansh Sen";
+            Console.WriteLine("string Multi-char in double quotes.");
+            Console.WriteLine("Phrase => " + phrase);
+            char grade = 'A'; // char grader = "A"; invalid to use double-quotes
+            Console.WriteLine("char single-char in single quotes.");
+            Console.WriteLine("grade => " + grade);
 
-            Console.WriteLine("There once was man named " + charName + ".");
-            Console.WriteLine("He was " + charAge + " years old.");
-            charName = "Sandy";
-            Console.WriteLine("He really liked his name " + charName + ",");
-            Console.WriteLine("But he didn't like being " + charAge + " years old");
+            int age = 19;
+            Console.WriteLine("int is a intger type w/o any quotes.");
+            Console.WriteLine("age => " + age);
+
+            float leastAccurate = 30.0f;
+            Console.WriteLine("float is least accurate real number, need suffix 'f'.");
+            Console.WriteLine("leastAccurate => " + leastAccurate);
+
+            double midAccurate = 4154.54584154;
+            Console.WriteLine("double is at a sweet spot can be used in most cases, no need for any suffix.");
+            Console.WriteLine("midAccurate => " + midAccurate);
+
+            decimal mostAccurate = 8484848.8484848484m;
+            Console.WriteLine("Decimal is most reliable and accurate but slow, need suffix 'm'.");
+            Console.WriteLine("mostAccurate => " + mostAccurate);
+
+            bool isAdult = true; // true or false
+            Console.WriteLine("bool is use dfor only true (1) and false (0) values.");
+            Console.WriteLine("isAdult => " + isAdult);
             Console.ReadLine(); // to make cmd stay on-screen
         }
     }
