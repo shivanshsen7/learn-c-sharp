@@ -10,44 +10,50 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-06
-            //to create a string:
-            string name = "Shivansh Sen";
-            //     index=> 0123456789-10-11
-            // escape chars 
-            /* \" double-quotes 
-             * \' single-quote
-             * \n newline
-             * \t tab
-             * \r backspace 
-             * etc.
-             */
-            Console.WriteLine("string name = \"Shivansh Sen\"; \n");
+            // tutorial-07
+            // KinderGarden Mathes
+            Console.WriteLine("KinderGarden Mathes");
+            Console.WriteLine("56 + 56 = " + (56 + 56));
+            Console.WriteLine("6 - 56 = " + (6 - 56));
+            Console.WriteLine("5 * 6 = " + (5 * 6));
+            Console.WriteLine("56 / 56 = " + (56 / 56));
+            Console.WriteLine("56 % 53 = " + (56 % 53) + "\n");
 
-            // to get string length
-            Console.WriteLine(name.Length + "\n");
+            // operator priority (precedence)
+            Console.WriteLine("operator priority");
+            Console.WriteLine("56 * 56 / 6 = " + (56 * 56 / 6));
+            Console.WriteLine("56 * (56 / 6) = " + (56 * (56 / 6)) + "\n");
 
-            // to get uppercase and lower case
-            Console.WriteLine(name.ToUpper());
-            Console.WriteLine(name.ToLower() + "\n");
+            // Conditions for implicit type convertion
+            Console.WriteLine("Conditions for implicit type convertion");
+            Console.WriteLine("5 / 2 = " + (5 / 2));
+            Console.WriteLine("5 / 2.0 = " + (5 / 2.0) + "\n");
 
-            // to check existance of sub-string
-            Console.WriteLine(name.Contains("sen"));
-            Console.WriteLine(name.Contains("Sen") + "\n");
+            // Uranary operators
+            int i = 0;
+            Console.WriteLine("Uranary operators");
+            Console.WriteLine("int i = 0;");
+            Console.WriteLine("i++ => " + (i++)); // returns before adding 1
+            Console.WriteLine("i => " + i);
+            Console.WriteLine("++i => " + (++i)); // returns after adding 1
+            Console.WriteLine("i => " + i);
+            Console.WriteLine("--i => " + (--i)); // returns after subtracting 1
+            Console.WriteLine("i => " + i);
+            Console.WriteLine("i-- => " + (i--)); // returns before subtracting 1
+            Console.WriteLine("i => " + i + "\n");
 
-            // indexing a string
-            Console.WriteLine(name[0]);
-            Console.WriteLine(name[3] + "\n");
-            //Console.WriteLine(name[-1]); // Right-indexing not allowed.
-
-            // get index of sub-string
-            Console.WriteLine(name.IndexOf("vansh"));
-            Console.WriteLine(name.IndexOf("s"));
-            Console.WriteLine(name.IndexOf("d")); // get -1 if sub-string absent
-
-            // grab sub-string via 
-            // start index and no. of chars to grab
-            Console.WriteLine(name.Substring(3, 5));
+            // Math methods
+            Console.WriteLine("Math methods");
+            Console.WriteLine("Math.Abs(-59) => " + Math.Abs(-59)); // absolute value
+            Console.WriteLine("Math.Pow(25,0.5) => " + Math.Pow(25, 0.5)); // power
+            Console.WriteLine("Math.Sqrt(25) => " + Math.Sqrt(25)); // square-root
+            Console.WriteLine("Math.Max(25, 625) => " + Math.Max(25, 625)); // Max of two 32 bit numbers
+            Console.WriteLine("Math.Min(25, 625) => " + Math.Min(25, 625)); // Min of two 32 bit numbers
+            Console.WriteLine("Math.Round(3.14159265359, 2) => " + Math.Round(3.14159265359, 2));
+            Console.WriteLine("Math.Round(3.14159265359, 3) => " + Math.Round(3.14159265359, 3));
+            // round of of Ist parameter upto IInd parameter
+            // and in absence of IInd parameter, it's assumed to be 0.
+            Console.WriteLine("Math.Round(3.14159265359) => " + Math.Round(3.14159265359));
             Console.ReadLine(); // to make cmd stay on-screen
         }
     }
