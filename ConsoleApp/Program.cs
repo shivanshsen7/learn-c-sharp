@@ -10,9 +10,14 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-01
-            Console.WriteLine("Hello, world!");
-
+            // tutorial-02
+            Console.WriteLine("      /|");
+            Console.WriteLine("     / |");
+            Console.WriteLine("    /  |");
+            Console.WriteLine("   /   |");
+            Console.WriteLine("  /    |");
+            Console.WriteLine(" /     |");
+            Console.WriteLine("/______|");
             Console.ReadLine(); // to make cmd stay on-screen
         }
     }
