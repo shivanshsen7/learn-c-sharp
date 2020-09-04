@@ -10,6 +10,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            // tutorial-01
+            Console.WriteLine("Hello, world!");
+
+            Console.ReadLine(); // to make cmd stay on-screen
         }
     }
 }
