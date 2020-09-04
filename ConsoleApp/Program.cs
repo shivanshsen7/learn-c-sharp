@@ -10,14 +10,15 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-02
-            Console.WriteLine("      /|");
-            Console.WriteLine("     / |");
-            Console.WriteLine("    /  |");
-            Console.WriteLine("   /   |");
-            Console.WriteLine("  /    |");
-            Console.WriteLine(" /     |");
-            Console.WriteLine("/______|");
+            // tutorial-03
+            string charName = "John";
+            int charAge;
+            charAge = 56;
+
+            Console.WriteLine("There once was man named " + charName + ".");
+            Console.WriteLine("He was " + charAge + " years old.");
+            Console.WriteLine("He really liked his name " + charName + ",");
+            Console.WriteLine("But he didn't like being " + charAge + " years old");
             Console.ReadLine(); // to make cmd stay on-screen
         }
     }
