@@ -10,33 +10,44 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-05
-            string phrase = "Shivansh Sen";
-            Console.WriteLine("string Multi-char in double quotes.");
-            Console.WriteLine("Phrase => " + phrase);
-            char grade = 'A'; // char grader = "A"; invalid to use double-quotes
-            Console.WriteLine("char single-char in single quotes.");
-            Console.WriteLine("grade => " + grade);
+            // tutorial-06
+            //to create a string:
+            string name = "Shivansh Sen";
+            //     index=> 0123456789-10-11
+            // escape chars 
+            /* \" double-quotes 
+             * \' single-quote
+             * \n newline
+             * \t tab
+             * \r backspace 
+             * etc.
+             */
+            Console.WriteLine("string name = \"Shivansh Sen\"; \n");
 
-            int age = 19;
-            Console.WriteLine("int is a intger type w/o any quotes.");
-            Console.WriteLine("age => " + age);
+            // to get string length
+            Console.WriteLine(name.Length + "\n");
 
-            float leastAccurate = 30.0f;
-            Console.WriteLine("float is least accurate real number, need suffix 'f'.");
-            Console.WriteLine("leastAccurate => " + leastAccurate);
+            // to get uppercase and lower case
+            Console.WriteLine(name.ToUpper());
+            Console.WriteLine(name.ToLower() + "\n");
 
-            double midAccurate = 4154.54584154;
-            Console.WriteLine("double is at a sweet spot can be used in most cases, no need for any suffix.");
-            Console.WriteLine("midAccurate => " + midAccurate);
+            // to check existance of sub-string
+            Console.WriteLine(name.Contains("sen"));
+            Console.WriteLine(name.Contains("Sen") + "\n");
 
-            decimal mostAccurate = 8484848.8484848484m;
-            Console.WriteLine("Decimal is most reliable and accurate but slow, need suffix 'm'.");
-            Console.WriteLine("mostAccurate => " + mostAccurate);
+            // indexing a string
+            Console.WriteLine(name[0]);
+            Console.WriteLine(name[3] + "\n");
+            //Console.WriteLine(name[-1]); // Right-indexing not allowed.
 
-            bool isAdult = true; // true or false
-            Console.WriteLine("bool is use dfor only true (1) and false (0) values.");
-            Console.WriteLine("isAdult => " + isAdult);
+            // get index of sub-string
+            Console.WriteLine(name.IndexOf("vansh"));
+            Console.WriteLine(name.IndexOf("s"));
+            Console.WriteLine(name.IndexOf("d")); // get -1 if sub-string absent
+
+            // grab sub-string via 
+            // start index and no. of chars to grab
+            Console.WriteLine(name.Substring(3, 5));
             Console.ReadLine(); // to make cmd stay on-screen
         }
     }
