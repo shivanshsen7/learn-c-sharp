@@ -12,39 +12,43 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-26
-            double num1, num2;
-            char operate;
-
-            Console.Write("Enter a number: ");
-            num1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter a Operator(single-character): ");
-            operate = Convert.ToChar(Console.ReadLine());
-
-
-            if ((operate != '*') && (operate != '/') && (operate != '-') && (operate != '+'))
-            {
-                Console.WriteLine("Invalid Operator," + operate + " Result is Invalid");
-            }   
-            Console.Write("Enter another number: ");
-            num2 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("result: " + Calc(num1, operate, num2));
+            //tutorial-27
+            Console.WriteLine(GetDay(0));
             Console.ReadLine(); // to make cmd stay on-screen
         }
-        static double Calc(double a, char t, double b)
+        static string GetDay(int dayNum)
         {
-            if (t == '+')
-                return a + b;
-            else if (t == '-')
-                return a - b;
-            else if (t == '*')
-                return a * b;
-            else if (t == '/')
-                return a / b;
-            else
-                return 0;
-        }
+            string dayName;
+
+            switch (dayNum)
+            {
+                case 0:
+                    dayName = "Monday";
+                    break;
+                case 1:
+                    dayName = "Tuesday";
+                    break;
+                case 2:
+                    dayName = "Wednesday";
+                    break;
+                case 3:
+                    dayName = "Thrusday";
+                    break;
+                case 4:
+                    dayName = "Friday";
+                    break;
+                case 5:
+                    dayName = "Saturday";
+                    break;
+                case 6:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid Day";
+                    break;
+            }
+
+            return dayName;
+        } 
     }
 }
