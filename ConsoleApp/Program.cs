@@ -12,15 +12,15 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-28
-            int day = 0;
-            while (day < 7)
+            //tutorial-29
+            int day = 7;
+            do
             {
                 Console.WriteLine(GetDay(day));
                 ++day;  // or day++;
-            }
-            
-            Console.ReadLine(); // to make cmd stay on-screen
+            } while (day < 7);
+
+                Console.ReadLine(); // to make cmd stay on-screen
         }
         static string GetDay(int dayNum)
         {
