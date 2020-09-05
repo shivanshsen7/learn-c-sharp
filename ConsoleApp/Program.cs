@@ -15,7 +15,7 @@ namespace ConsoleApp
             // return the greater integer of the two
             int num1 = 7, num2 = 77;
             int maxNum = reMax(num1, num2);
-            Console.WriteLine("Sum of " + num1 + "and "+ num2 + "is " + maxNum);
+            Console.WriteLine("Max of " + num1 + " and "+ num2 + " is " + maxNum);
 
             Console.ReadLine(); // to make cmd stay on-screen
         }
