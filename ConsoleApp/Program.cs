@@ -10,18 +10,24 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-14
-            string naming;
+            // tutorial-15
+            string naming; // can name differently 
+            int age; // But also same.
+            // You'll get into it in scopes
             Console.Write("Enter a Name: ");
             naming = Console.ReadLine();
-            SayHi(naming);
-            SayHi("Shivansh Sen"); // can directly call and also multiple times
+            Console.Write("Enter your age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            SayHi(naming, age);
+            SayHi("Shivansh Sen", 21); // can directly call and also multiple times
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
-        static void SayHi(string userName)
+        static void SayHi(string userName, int age)
         {
-            Console.WriteLine("Hi, "+ userName);
+            Console.WriteLine("Hi, "+ userName + ", " + age);
+
         }
     }
 }
