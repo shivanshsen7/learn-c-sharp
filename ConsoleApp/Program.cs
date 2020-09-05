@@ -10,28 +10,38 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-24
+            // tutorial-25
           
             bool isMale = true, isTall = true;
 
-            // DRY => Don't Repeat Yourself
-            isTallOrMale(isMale, isTall);
-            isTallOrMale(true, false);
-
+            isTallOrMale(isMale, isTall); // isMale && isTall
+            isTallOrMale(true, false); // isMale && !isTall
+            isTallOrMale(false, false); // !isMale && isTall
+            isTallOrMale(false, true); // !isMale && !isTall => else
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
         static void isTallOrMale(bool isMale, bool isTall)
         {
-            if (isMale || isTall)
+            if (isMale && isTall)
             {
-                Console.WriteLine("You are either tall or male, or both.");
+                Console.WriteLine("You are a tall male.");
             }
 
+            else if (isMale && !isTall)
+            {
+                Console.WriteLine("You a short male.");
+            }
+            else if (!isMale && isTall)
+            {
+                Console.WriteLine("You Tall but not male.");
+            
+            }
             else
             {
-                Console.WriteLine("You either neither male or nor tall.");
+                Console.WriteLine("You are short and not male.");
             }
+        
         }
     }
 }
