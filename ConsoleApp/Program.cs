@@ -12,12 +12,12 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-31
-            for(int i = 0; i<5; ++i)
+            //tutorial-32
+            int[] luckyNums = { 4, 8, 15, 16, 23, 42 };
+            for(int i = 0; i<luckyNums.Length; ++i)
             {
-                Console.WriteLine(i+1);
+                Console.WriteLine("luckyNums[" + i + "] = " + luckyNums[i]);
             }
-           
             Console.ReadLine(); // to make cmd stay on-screen
         }
         
