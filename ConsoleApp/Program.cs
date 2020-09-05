@@ -10,14 +10,18 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-13
-            SayHi(); // runs only when called in main
+            // tutorial-14
+            string naming;
+            Console.Write("Enter a Name: ");
+            naming = Console.ReadLine();
+            SayHi(naming);
+            SayHi("Shivansh Sen"); // can directly call and also multiple times
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
-        static void SayHi()
+        static void SayHi(string userName)
         {
-            Console.WriteLine("Hi, User");
+            Console.WriteLine("Hi, "+ userName);
         }
     }
 }
