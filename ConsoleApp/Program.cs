@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,44 +12,39 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // task-01-completed
-            // Complete "reMax" method that accept two integer and 
-            // return the greater integer of the two
-            // in case of equality return any of the two :)
-            int num1 = 7, num2 = 77;
-            int maxNum = reMax(num1, num2);
-            Console.WriteLine("Max of " + num1 + " and " + num2 + " is " + maxNum);
+            //tutorial-26
+            double num1, num2;
+            char operate;
 
+            Console.Write("Enter a number: ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter a Operator(single-character): ");
+            operate = Convert.ToChar(Console.ReadLine());
+
+
+            if ((operate != '*') && (operate != '/') && (operate != '-') && (operate != '+'))
+            {
+                Console.WriteLine("Invalid Operator," + operate + " Result is Invalid");
+            }   
+            Console.Write("Enter another number: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("result: " + Calc(num1, operate, num2));
             Console.ReadLine(); // to make cmd stay on-screen
         }
-        // complete the method below
-        static int reMax(int a, int b)
+        static double Calc(double a, char t, double b)
         {
-            // approach 1
-            if (a >= b)
-                return a;
+            if (t == '+')
+                return a + b;
+            else if (t == '-')
+                return a - b;
+            else if (t == '*')
+                return a * b;
+            else if (t == '/')
+                return a / b;
             else
-                return b;
-
-
-            // You can approach anyway you like. 
-            // approach 2
-            //if (a >= b) { return a; }
-            //else { return b; }
-
-            //// approach 3 
-            //if (a > b)
-            //{
-            //    return a;
-            //}
-            //else if (b < a)
-            //{
-            //    return b;
-            //}
-            //else
-            //{
-            //    return a;
-            //}
+                return 0;
         }
     }
 }
