@@ -10,25 +10,26 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-16
-            string naming; // can name differently 
-            int age; // But also same.
-            // You'll get into it in scopes
+            // tutorial-17
+            string naming; 
+            int age; 
+          
             Console.Write("Enter a Name: ");
             naming = Console.ReadLine();
             Console.Write("Enter your age: ");
             age = Convert.ToInt32(Console.ReadLine());
 
-            SayHi(naming, age);
-            SayHi("Shivansh Sen", 21); // can directly call and also multiple times
-            // SayHi("Shivansh Sen"); // Error not enought params
-
+            string firstRun  = SayHi(naming, age);
+            string secondRun = SayHi("Shivansh Sen", 21); 
+            
+            Console.WriteLine(firstRun);
+            Console.WriteLine(secondRun);
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
-        static void SayHi(string userName, int age)
+        static string SayHi(string userName, int age) // setting string as return type
         {
-            Console.WriteLine("Hi, "+ userName + ", " + age);
+            return ("Hi, "+ userName + ", " + age); // use 'return' keyword to return something
 
         }
     }
