@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-15
+            // tutorial-16
             string naming; // can name differently 
             int age; // But also same.
             // You'll get into it in scopes
@@ -21,6 +21,8 @@ namespace ConsoleApp
 
             SayHi(naming, age);
             SayHi("Shivansh Sen", 21); // can directly call and also multiple times
+            // SayHi("Shivansh Sen"); // Error not enought params
+
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
