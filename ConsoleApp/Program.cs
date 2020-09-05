@@ -10,14 +10,20 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-10
-            Console.Write("Enter a number :");
-            double num1 = Convert.ToDouble(Console.ReadLine()) ; // String to 32Bit number
-            Console.Write("Enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            //// Try Uncomment this one.
-            //Console.WriteLine("Sum of " + num1 + " and " + num2 + " is " + num1 + num2); 
-            Console.WriteLine("Sum of " + num1+ " and " + num2 + " is " + (num1+num2));
+            // tutorial-11
+            string color, pluralNoun, celebrity;
+
+            Console.Write("Enter a Color: ");
+            color = Console.ReadLine();
+            Console.Write("Enter a Plural Noun: ");
+            pluralNoun = Console.ReadLine(); 
+            Console.Write("Enter a  celebrity: ");
+            celebrity = Console.ReadLine();
+
+            Console.WriteLine("Roses are " + color + ".");
+            Console.WriteLine( pluralNoun + " are Blue.");
+            Console.WriteLine("I love " + celebrity + ".");
+
 
             Console.ReadLine(); // to make cmd stay on-screen
         }
