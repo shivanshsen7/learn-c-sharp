@@ -10,38 +10,19 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-25
-          
-            bool isMale = true, isTall = true;
+            // task-01
+            // Complete "reMax" method that accept two integer and 
+            // return the greater integer of the two
+            int num1 = 7, num2 = 77;
+            int maxNum = reMax(num1, num2);
+            Console.WriteLine("Sum of " + num1 + "and "+ num2 + "is " + maxNum);
 
-            isTallOrMale(isMale, isTall); // isMale && isTall
-            isTallOrMale(true, false); // isMale && !isTall
-            isTallOrMale(false, false); // !isMale && isTall
-            isTallOrMale(false, true); // !isMale && !isTall => else
             Console.ReadLine(); // to make cmd stay on-screen
         }
-
-        static void isTallOrMale(bool isMale, bool isTall)
+        // complete the method below
+        static int reMax(int a,int b)
         {
-            if (isMale && isTall)
-            {
-                Console.WriteLine("You are a tall male.");
-            }
 
-            else if (isMale && !isTall)
-            {
-                Console.WriteLine("You a short male.");
-            }
-            else if (!isMale && isTall)
-            {
-                Console.WriteLine("You Tall but not male.");
-            
-            }
-            else
-            {
-                Console.WriteLine("You are short and not male.");
-            }
-        
         }
     }
 }
