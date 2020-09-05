@@ -10,25 +10,22 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-19
-            int num, numCube; 
-          
-            Console.Write("Enter a integer: ");
-            num = Convert.ToInt32(Console.ReadLine());
-            numCube = Cube(num);
-            Console.WriteLine(numCube);
+            // tutorial-20
+            int age; 
+            
+            Console.Write("Enter your Age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            if (age >= 18) {
+                isAdult();
+            }
+
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
-        static int Cube(int number) 
+        static void isAdult() 
         {
-            // return Math.Pow(Convert.ToDouble(number), 3);// can not implict convert
-            return Convert.ToInt32(Math.Pow(Convert.ToDouble(number), 3));
-            // can't use Math.Pow(number, 3)
-            // as that requires doubles
-            // wait can we do that?
-            // Oh Yeah!, we did it. But man what a drag!
-
+            Console.WriteLine("You are Adult");
         }
     }
 }
