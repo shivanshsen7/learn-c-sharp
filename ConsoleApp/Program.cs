@@ -10,36 +10,20 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-21
-            int age;
-            bool isMale;
-            Console.Write("Enter your Age: ");
-            age = Convert.ToInt32(Console.ReadLine());
-
-            if (age >= 18) {
-                isAdult();
+            // tutorial-22
+          
+            bool isMale = true, isTall = true;
+           
+            if (isMale && isTall) {
+                Console.WriteLine("You are a tall male");
             }
-            Console.Write("If male enter 'y': ");
-            if ("y" == Console.ReadLine()) {
-                Console.WriteLine("You are male");
-            }
-            //Console.Write("If male enter 'y': ");
-            //isMale = "y" == Console.ReadLine();
-            //if (isMale)
-            //{
-            //    Console.WriteLine("You are male");
-            //}
+            
             else
             {
-                Console.WriteLine("You are not male");
+                Console.WriteLine("You either not male or not tall, or both");
             }
 
             Console.ReadLine(); // to make cmd stay on-screen
-        }
-
-        static void isAdult() 
-        {
-            Console.WriteLine("You are Adult");
         }
     }
 }
