@@ -10,26 +10,24 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // tutorial-17
-            string naming; 
-            int age; 
+            // tutorial-18 
+            int num, numCube; 
           
-            Console.Write("Enter a Name: ");
-            naming = Console.ReadLine();
-            Console.Write("Enter your age: ");
-            age = Convert.ToInt32(Console.ReadLine());
-
-            string firstRun  = SayHi(naming, age);
-            string secondRun = SayHi("Shivansh Sen", 21); 
-            
-            Console.WriteLine(firstRun);
-            Console.WriteLine(secondRun);
+            Console.Write("Enter a integer: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            numCube = Cube(num);
+            // need to use so assigned to a variable
+            // while it will return nothing seems to happen unless wee use the return data
+            Console.WriteLine(numCube);
             Console.ReadLine(); // to make cmd stay on-screen
         }
 
-        static string SayHi(string userName, int age) // setting string as return type
+        static int Cube(int number) 
         {
-            return ("Hi, "+ userName + ", " + age); // use 'return' keyword to return something
+            return number * number * number;
+            // can't use Math.Pow(number, 3)
+            // as that requires doubles
+            // wait can we do that?
 
         }
     }
