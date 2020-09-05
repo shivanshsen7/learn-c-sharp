@@ -12,27 +12,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-30
-            int guess, val = 65;
-            bool guessed = false;
-            while (!guessed)
+            //tutorial-31
+            for(int i = 0; i<5; ++i)
             {
-                Console.Write("Guess the number: ");
-                guess = Convert.ToInt32(Console.ReadLine());
-                if (guess < val)
-                {
-                    Console.WriteLine("Guess Higher");
-                }
-                else if (guess > val)
-                {
-                    Console.WriteLine("Guess Lower");
-                }
-                else
-                {
-                    guessed = true;
-                    Console.WriteLine("You Guessed right the number was " + guess + " .");
-                    
-                }
+                Console.WriteLine(i+1);
             }
            
             Console.ReadLine(); // to make cmd stay on-screen
