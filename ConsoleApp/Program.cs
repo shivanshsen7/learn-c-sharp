@@ -12,14 +12,19 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-32
-            int[] luckyNums = { 4, 8, 15, 16, 23, 42 };
-            for(int i = 0; i<luckyNums.Length; ++i)
-            {
-                Console.WriteLine("luckyNums[" + i + "] = " + luckyNums[i]);
-            }
+            //tutorial-33
+            Console.WriteLine(GetPow(9, 3));
             Console.ReadLine(); // to make cmd stay on-screen
         }
-        
+        static int GetPow(int a,int b)
+        {
+            int result = 1;
+            for(int i = 0; i < b; ++i)
+            {
+                result *= a;
+            }
+            return result;
+        }   
+
     }
 }
