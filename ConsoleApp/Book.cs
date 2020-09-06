@@ -8,6 +8,7 @@ namespace ConsoleApp
 {
     class Book
     {
+        static private int count = 0;
         public string author;
         public string title;
         private int pages;
@@ -18,21 +19,28 @@ namespace ConsoleApp
             title = title_;
             pages = pages_;
 
+            count++;
+
         }
         public Book(string title_,string author_)
         {
             Console.WriteLine("New Book Created");
             author = author_;
             title = title_;
+            count++;
         }
         public Book(int pages_)
         {
             Console.WriteLine("New Book Created");
             pages = pages_;
+
+            count++;
         }
         public Book()
         {
             Console.WriteLine("New Book Created");
+
+            count++;
         }
 
         public bool IsBig()
@@ -54,6 +62,9 @@ namespace ConsoleApp
                 }
             }
         }
-
+        static public int Count
+        {
+            get { return count; }
+        }
     }
 }
