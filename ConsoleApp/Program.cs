@@ -12,7 +12,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-42
+            //tutorial-43
             Book HPOne = new Book
             {
                 title = "Harry Potter and the Philosopher's Stone",
@@ -29,8 +29,9 @@ namespace ConsoleApp
             {
                 title = "Harry Potter and the Chamber of Secrets",
                 author = "J.K. Rowling",
-                pages = 251 // Original U.K. Edition
+                
             };
+            HPTwo.pages = 251; // Original U.K. Edition
             string HPTwoFull = "Second Harry Potter Book";
             Console.WriteLine($"{HPTwoFull}'s Title is \"{HPTwo.title}\"");
             Console.WriteLine($"{HPTwoFull}'s Author is \"{HPTwo.author}\"");
