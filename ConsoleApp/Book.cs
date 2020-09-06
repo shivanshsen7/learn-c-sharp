@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         public string author;
         public string title;
-        public int pages;
+        private int pages;
         public Book( string title_, string author_, int pages_)
         {
             Console.WriteLine("New Book Created");
@@ -24,6 +24,11 @@ namespace ConsoleApp
             Console.WriteLine("New Book Created");
             author = author_;
             title = title_;
+        }
+        public Book(int pages_)
+        {
+            Console.WriteLine("New Book Created");
+            pages = pages_;
         }
         public Book()
         {

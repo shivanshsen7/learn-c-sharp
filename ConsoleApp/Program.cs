@@ -13,28 +13,31 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-46
-            Book HPOne = new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 223);
-                                  
+            //tutorial-47
+            Book HPOne = new Book(
+                title_:"Harry Potter and the Philosopher's Stone", 
+                author_:"J.K. Rowling",
+                pages_:223);
+
             Book HPTwo = new Book(
                 "Harry Potter and the Chamber of Secrets",
-                "J.K. Rowling"
-            )
-            {
-                pages = 251 // Original U.K. Edition
-            };
+                "J.K. Rowling",
+                251
+            );
+            
            
             Book HPThree = new Book(
                 "Harry Potter and the Prisoner of Azkaban",
-                "J.K. Rowling"
+                "J.K. Rowling",
+                317
             );
-            HPThree.pages = 317; // Original U.K. Edition
+            
            
-            Book HPFour = new Book()
+            Book HPFour = new Book(pages_:636)
             {
                 title = "Harry Potter and the Goblet of Fire",
-                author = "J.K. Rowling",
-                pages = 636  // Original U.K. Edition
+                author = "J.K. Rowling"
+                
             };
             // IsBig() return true if book has >= 500 pages.
             Console.WriteLine(HPOne.IsBig());     // false
