@@ -17,13 +17,13 @@ namespace ConsoleApp
             Book HPOne = new Book(
                 title_:"Harry Potter and the Philosopher's Stone", 
                 author_:"J.K. Rowling",
-                pages_:223);
+                pages_:223); // Named Arguments
 
             Book HPTwo = new Book(
                 "Harry Potter and the Chamber of Secrets",
                 "J.K. Rowling",
                 251
-            );
+            ); // Positional Arguments
             
            
             Book HPThree = new Book(
