@@ -8,6 +8,8 @@ namespace ConsoleApp
 {
     class Book
     {
-
+        public string author;
+        public string title;
+        public int pages;
     }
 }
