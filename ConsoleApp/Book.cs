@@ -30,5 +30,12 @@ namespace ConsoleApp
             Console.WriteLine("New Book Created");
         }
 
+        public bool IsBig()
+        {
+            if (pages >= 500)
+                return true;
+            return false;
+        }
+
     }
 }
