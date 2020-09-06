@@ -41,6 +41,19 @@ namespace ConsoleApp
                 return true;
             return false;
         }
+        public int Pages
+        {
+            get { return pages; }
+            set { if (value.GetType() == typeof(int) && value <= 10E4 && value > 0)
+                {
+                    pages = value;
+                }
+                else
+                {
+                    Console.WriteLine($"No. of pages in a book can't be {value}");
+                }
+            }
+        }
 
     }
 }
