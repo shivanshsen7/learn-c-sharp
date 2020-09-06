@@ -47,8 +47,10 @@ namespace ConsoleApp
                 
             };
 
-
             Console.WriteLine(Book.Count);
+            Console.Write("sine(pi/2) = ");
+
+            Console.WriteLine(Math.Sin((Math.PI) / 2));
             Console.ReadLine(); // to make cmd stay on-screen
         }
            
