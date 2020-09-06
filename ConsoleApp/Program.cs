@@ -12,7 +12,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-37
+            //tutorial-38
             double num1, num2, result;
             try
             {
@@ -23,7 +23,7 @@ namespace ConsoleApp
                 result = num1 / num2;
                 Console.WriteLine($"{num1} / {num2} == {result}");
             }
-            catch(Exception e)
+            catch(FormatException e)
             {
                 Console.WriteLine("Invalid Input");
                 Console.WriteLine(e.Message);
