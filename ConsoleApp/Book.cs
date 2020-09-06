@@ -11,5 +11,13 @@ namespace ConsoleApp
         public string author;
         public string title;
         public int pages;
+        public Book(string author_, string title_, int pages_)
+        {
+            Console.WriteLine("New Book Created");
+            author = author_;
+            title = title_;
+            pages = pages_;
+
+        }
     }
 }
