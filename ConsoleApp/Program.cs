@@ -12,34 +12,14 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //tutorial-34
-            int[,] twoD = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-            for(int i=0; i<3; ++i)
-            {
-                for(int j = 0; j < 3; ++j)
-                {
-                    Console.WriteLine("twoD[i, j] = " + twoD[i, j]);
-                }
-            }
-            // int[,,] threeD = new int[3, 4, 6];
-            int[,,] threeD = {
-                        { { 1,2,3,4,5,6},{ 7,8,9,10,11,12},{ 13,14,15,16,17,18,}, { 19,20,21,22,23,24} },
-                        { { 1,2,3,4,5,6},{ 7,8,9,10,11,12},{ 13,14,15,16,17,18,}, { 19,20,21,22,23,24} },
-                        { { 1,2,3,4,5,6},{ 7,8,9,10,11,12},{ 13,14,15,16,17,18,}, { 19,20,21,22,23,24} },
-            };
-            for (int i = 0; i < 3; ++i)
-            {
-                for (int j = 0; j < 4; ++j)
-                {
-                    for(int k = 0; k < 6; ++k)
-                    {
-
-                        Console.WriteLine("threeD[i, j, k] = " + threeD[i, j, k]);
-
-                    }
-                }
-            }
-
+            //tutorial-35
+            double num1, num2, result;
+            Console.Write("Num1: ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Num2: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+            result = num1 / num2;
+            Console.WriteLine($"{num1} / {num2} == {result}");
             Console.ReadLine(); // to make cmd stay on-screen
         }
            
